@@ -1,0 +1,352 @@
+[
+	{
+		"description": "Combat Wounded Veteran",
+		"length": 5,
+		"pattern": "\\d{3}[A-Z]\\d"
+	},
+	{
+		"description": "Disabled Veteran",
+		"length": 6,
+		"pattern": "DV\\d{3}[A-Z]"
+	},
+	{
+		"description": "Pearl Harbor Survivor",
+		"length": 6,
+		"pattern": "\\d[A-Z]\\d{4}"
+	},
+	{
+		"description": "Ex-POW",
+		"length": 5,
+		"pattern": "\\d{2}[A-Z]\\d{2}"
+	},
+	{
+		"description": "World War I",
+		"length": 5,
+		"pattern": "\\d{2}W\\d{2}"
+	},
+	{
+		"description": "In transit Repair",
+		"length": 6,
+		"pattern": "\\d{2}G\\d{3}"
+	},
+	{
+		"description": "In transit Repair",
+		"length": 7,
+		"pattern": "\\d{3}G\\d{3}"
+	},
+	{
+		"description": "Manufacturer",
+		"length": 6,
+		"pattern": "\\d{2}M\\d{3}"
+	},
+	{
+		"description": "Manufacturer",
+		"length": 6,
+		"pattern": "\\d{3}M\\d{2}"
+	},
+	{
+		"description": "Manufacturer",
+		"length": 7,
+		"pattern": "\\d{3}M\\d{3}"
+	},
+	{
+		"description": "Manufacturer",
+		"length": 4,
+		"pattern": "\\dM\\d{2}"
+	},
+	{
+		"description": "Manufacturer motorcycle",
+		"length": 5,
+		"pattern": "\\d{2}M\\d{2}"
+	},
+	{
+		"description": "Repossession",
+		"length": 6,
+		"pattern": "\\d{2}R\\d{3}"
+	},
+	{
+		"description": "Repossession",
+		"length": 7,
+		"pattern": "\\d{3}R\\d{3}"
+	},
+	{
+		"description": "Special Farm",
+		"length": 6,
+		"pattern": "\\d{2}F\\d{3}"
+	},
+	{
+		"description": "Special Farm",
+		"length": 7,
+		"pattern": "\\d{3}F\\d{3}"
+	},
+	{
+		"description": "Special Mobile Equipment",
+		"length": 6,
+		"pattern": "\\d{2}S\\d{3}"
+	},
+	{
+		"description": "Special Mobile Equipment",
+		"length": 7,
+		"pattern": "\\d{3}S\\d{3}"
+	},
+	{
+		"description": "Transporter",
+		"length": 6,
+		"pattern": "\\d{2}T\\d{3}"
+	},
+	{
+		"description": "Transporter",
+		"length": 7,
+		"pattern": "\\d{3}T\\d{3}"
+	},
+	{
+		"description": "Veteran",
+		"length": 5,
+		"pattern": "\\d[A-Z]{3}\\d"
+	},
+	{
+		"description": "Organization",
+		"length": 5,
+		"pattern": "\\d[A-Z]{2}\\d{2}"
+	},
+	{
+		"description": "Passenger",
+		"length": 6,
+		"pattern": "\\d{3}[A-Z]{3}"
+	},
+	{
+		"description": "Passenger",
+		"length": 6,
+		"pattern": "[A-Z]{3}\\d{3}"
+	},
+	{
+		"description": "Passenger",
+		"length": 6,
+		"pattern": "[A-Z]{2}\\d{3}[A-Z]"
+	},
+	{
+		"description": "Passenger",
+		"length": 6,
+		"pattern": "[A-Z]\\d{3}[A-Z]{2}"
+	},
+	{
+		"description": "Passenger",
+		"length": 7,
+		"pattern": "[A-Z]{3}\\d{4}"
+	},
+	{
+		"description": "Commercial",
+		"length": 6,
+		"pattern": "[A-Z]{2}\\d{4}"
+	},
+	{
+		"description": "Commercial",
+		"length": 6,
+		"pattern": "\\d{4}[A-Z]{2}"
+	},
+	{
+		"description": "Commercial",
+		"length": 6,
+		"pattern": "\\d[A-Z]{2}\\d{3}"
+	},
+	{
+		"description": "Commercial",
+		"length": 6,
+		"pattern": "\\d{3}[A-Z]{2}\\d"
+	},
+	{
+		"description": "Commercial",
+		"length": 7,
+		"pattern": "[A-Z]{2}\\d{5}"
+	},
+	{
+		"description": "Motorcycle",
+		"length": 5,
+		"pattern": "[A-Z]{2}\\d{3}"
+	},
+	{
+		"description": "Motorcycle",
+		"length": 5,
+		"pattern": "\\d{3}[A-Z]{2}"
+	},
+	{
+		"description": "Motorcycle",
+		"length": 5,
+		"pattern": "[A-Z]\\d{3}[A-Z]"
+	},
+	{
+		"description": "Trailer",
+		"length": 6,
+		"pattern": "[A-Z]\\d{5}"
+	},
+	{
+		"description": "Trailer",
+		"length": 6,
+		"pattern": "\\d{5}[A-Z]"
+	},
+	{
+		"description": "Trailer",
+		"length": 6,
+		"pattern": "\\d[A-Z]\\d{4}"
+	},
+	{
+		"description": "Trailer",
+		"length": 7,
+		"pattern": "[A-Z]\\d{6}"
+	},
+	{
+		"description": "Historical",
+		"length": 6,
+		"pattern": "\\d{6}"
+	},
+	{
+		"description": "Historical motorcycles",
+		"length": 4,
+		"pattern": "\\d{4}"
+	},
+	{
+		"description": "Disability",
+		"length": 5,
+		"pattern": "[A-Z]\\d{4}"
+	},
+	{
+		"description": "Disability",
+		"length": 5,
+		"pattern": "\\d{4}[A-CE-Z]"
+	},
+	{
+		"description": "Disability",
+		"length": 6,
+		"pattern": "\\d[A-Z]\\d{4}"
+	},
+	{
+		"description": "Disability",
+		"length": 6,
+		"pattern": "\\d{4}[A-Z]\\d"
+	},
+	{
+		"description": "Disability",
+		"length": 4,
+		"pattern": "\\d[A-Z]\\d{2}"
+	},
+	{
+		"description": "Disability motorcycle",
+		"length": 4,
+		"pattern": "\\d{2}[A-Z]\\d"
+	},
+	{
+		"description": "Y Plates",
+		"length": 6,
+		"pattern": "\\d{2}Y\\d{3}"
+	},
+	{
+		"description": "Y Plates",
+		"length": 7,
+		"pattern": "\\d{3}Y\\d{3}"
+	},
+	{
+		"description": "Medal of Honor",
+		"length": 4,
+		"pattern": "MH\\d{2}"
+	},
+	{
+		"description": "Municipal",
+		"length": 6,
+		"pattern": "\\d{2}X\\d{3}"
+	},
+	{
+		"description": "Municipal",
+		"length": 6,
+		"pattern": "\\d{3}X\\d{2}"
+	},
+	{
+		"description": "Municipal",
+		"length": 7,
+		"pattern": "\\d{3}X\\d{3}"
+	},
+	{
+		"description": "Municipal",
+		"length": 5,
+		"pattern": "\\d{3}X\\d"
+	},
+	{
+		"description": "Municipal motorcycle",
+		"length": 5,
+		"pattern": "\\d{2}X\\d{2}"
+	},
+	{
+		"description": "Commemorative",
+		"length": 5,
+		"pattern": "[A-Z]{3}\\d{2}"
+	},
+	{
+		"description": "Commemorative",
+		"length": 5,
+		"pattern": "\\d{2}[A-Z]{3}"
+	},
+	{
+		"description": "Great Lakes Splendor",
+		"length": 6,
+		"pattern": "\\d[A-Z]{3}\\d{2}"
+	},
+	{
+		"description": "Great Lakes Splendor",
+		"length": 6,
+		"pattern": "[A-Z]\\d{4}[A-Z]"
+	},
+	{
+		"description": "Great Lakes Splendor",
+		"length": 6,
+		"pattern": "\\d{4}[A-Z]\\d"
+	},
+	{
+		"description": "Great Lakes Splendor motorcycle",
+		"length": 5,
+		"pattern": "\\d{2}[A-Z]{2}\\d"
+	},
+	{
+		"description": "Olympic",
+		"length": 5,
+		"pattern": "\\dM[A-Z]\\d{2}"
+	},
+	{
+		"description": "Dealer",
+		"length": 6,
+		"pattern": "\\d{2}D\\d{3}"
+	},
+	{
+		"description": "Dealer",
+		"length": 6,
+		"pattern": "\\d{3}D\\d{2}"
+	},
+	{
+		"description": "Dealer",
+		"length":  5,
+		"pattern": "\\d{4}D"
+	},
+	{
+		"description": "Dealer motorcycle",
+		"length": 5,
+		"pattern": "D\\d{4}"
+	},
+	{
+		"description": "FRP",
+		"length": 5,
+		"pattern": "[A-Z]{2}\\d{2}A"
+	},
+	{
+		"description": "FRP",
+		"length": 5,
+		"pattern": "[A-Z]\\d{2}[A-Z]{2}"
+	},
+	{
+		"description": "FRP Disability",
+		"length": 4,
+		"pattern": "[A-Z]\\d{3}"
+	 },
+	 {
+		"description": "FRP Disability",
+		"length": 3,
+		"pattern": "\\d{3}"
+	 }
+]

@@ -1,0 +1,340 @@
+[
+	{
+		"name": "Afghanistan Campaign Medal",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Afghanistan Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Air Force Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Army Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Coast Guard Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Combat Wounded Veteran (Purple Heart)",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Cuban Missile Crisis",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Disabled Veteran",
+		"designCompatibility": ["PURE_MICHIGAN"],
+		"type": "veteran"
+	},
+	{
+		"name": "Dominican Republic Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Ex-Prisoner of War(Ex-POW)",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Gold Star Family",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Grenada Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Iraq Campaign Medal",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Iraq Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Korean War Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Laos Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Lebanon Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Marine Corps Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Military Reserve Member",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "National Guard Member",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Navy Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Panama Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Pearl Harbor Survivor",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Persian Gulf (Desert Storm) Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Somalia Conflict Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Vietnam Service Medal",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "Vietnam War Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"name": "World War II Veteran",
+		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"type": "veteran"
+	},
+	{
+		"type": "special",
+		"name": "Agricultural Heritage",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Be The Match",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Boy Scouts of America",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Breast and Cervical Cancer",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Children",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Donate Life",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Ducks Unlimited",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Lighthouses",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Michigan Veteran",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Olympic Education",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Proud To Be Americanl",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Veterans Memorial",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Water Quality",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "special",
+		"name": "Wildlife Habitat",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Eastern Michigan University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Ferris State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Grand Valley State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Lake Superior State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Michigan State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Michigan Technical University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Northern Michigan University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Oakland University",
+		"designCompatibility": ["PURE_MICHIGAN"],
+		"styles": {
+			"footerText": "Oakland University",
+			"logoImage": "ou-logo.png"
+		}
+	},
+	{
+		"type": "university",
+		"name": "Saginaw Valley State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "University of Michigan",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "University of Michigan - Dearborn",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "University of Michigan - Flint",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Wayne State University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	},
+	{
+		"type": "university",
+		"name": "Western Michigan University",
+		"logoUrl": "",
+		"mottoUrl": "",
+		"designCompatibility": ["PURE_MICHIGAN"]
+	}
+]

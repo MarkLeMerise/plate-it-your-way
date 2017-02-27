@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'license-plate';
+	src: url('../fonts/licenseplate-webfont.woff2') format('woff2'),
+		url('../fonts/licenseplate-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.app {
+	margin: 1em;
+}
+
+.plate-designer {
+	border: 1px solid #A7A7A7;
+	border-radius: 10px;
+	padding: 10px;
+}

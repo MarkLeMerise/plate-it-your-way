@@ -1,0 +1,24 @@
+.number-input-container.has-format-collision .number-input {
+	color: red;
+}
+
+.number-input-container.has-format-collision .number-input:focus {
+	box-shadow: 0px 1px 11px red inset;
+}
+
+.number-input {
+	background: transparent;
+	border: none;
+	color: #305aac;
+	font-family: 'license-plate';
+	font-size: 16rem;
+	letter-spacing: 0.15em;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+.number-input:focus {
+	box-shadow: 0px 1px 11px #dacfcf inset;
+	outline: none;
+}

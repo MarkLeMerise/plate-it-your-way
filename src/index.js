@@ -1,4 +1,11 @@
+import App from './components/App';
 import React from 'react';
+import { Provider } from 'react-redux';
 import { render } from 'react-dom';
+import store from './reducers';
 
-render(<h1>Hello world!</h1>, document.getElementById('root'));
+render((
+	<Provider store={ store }>
+		<App />
+	</Provider>
+), document.getElementById('root'));

@@ -1,0 +1,7 @@
+.plate-designer-content {
+	display: flex;
+}
+
+.plate-designer .plate-designer-number {
+	flex: 1 0 75%;
+}

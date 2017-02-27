@@ -4,11 +4,18 @@
     "build": "neutrino build --presets neutrino-preset-react"
   },
   "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-plugin-react": "^6.10.0",
     "neutrino": "^4.2.0",
     "neutrino-preset-react": "^4.2.0"
   },
   "dependencies": {
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-immutable": "^3.1.0"
   }
 }
