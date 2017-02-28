@@ -2,7 +2,9 @@
 	{
 		"code": "MACKINAC_BRIDGE",
 		"description": "Mackinac Bridge",
-		"textColor": "black"
+		"styles": {
+			"footerText": "The Mackinac Bridge"
+		}
 	},
 	{
 		"code": "PURE_MICHIGAN",
@@ -11,12 +13,10 @@
 			"backgroundColor": "white",
 			"footerImage": "pure-michigan-wave.jpg",
 			"headerImage": "pure-michigan-logo.png"
-		},
-		"textColor": "#006bb5"
+		}
 	},
 	{
 		"code": "SPECTACULAR_PENINSULAS",
-		"description": "Spectacular Peninsulas",
-		"textColor": "black"
+		"description": "Spectacular Peninsulas"
 	}
 ]

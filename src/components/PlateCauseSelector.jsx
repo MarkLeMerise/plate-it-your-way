@@ -1,5 +1,4 @@
 import React from 'react';
-import selectCauseAction from '../actions/selectCauseAction';
 import { connect } from 'react-redux';
 
 export default connect(
@@ -17,7 +16,7 @@ export default connect(
 	_onSelectCause(event) {
 		let { value } = event.target;
 		value = value === 'Choose cause...' ? null : value;
-		this.props.dispatch(selectCauseAction(value))
+		this.props.selectCause(value);
 	}
 
 	render() {

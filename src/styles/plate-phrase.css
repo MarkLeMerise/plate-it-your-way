@@ -1,0 +1,49 @@
+.plate-phrase-input {
+	background: transparent;
+	border: none;
+	border-bottom: 3px dashed transparent;
+	font: 17rem 'license-plate';
+	text-transform: uppercase;
+}
+
+.plate-phrase-input::-webkit-input-placeholder {
+	color: #E1E1E1;
+	text-shadow: none;
+	-webkit-text-stroke: none;
+}
+
+.plate-phrase-input:focus {
+	outline: none;
+}
+
+.plate-designer .plate-phrase.has-format-collision .plate-phrase-input {
+	-webkit-text-stroke: none;
+	color: red;
+	text-shadow: none;
+}
+
+.plate-designer .plate-phrase.has-format-collision .plate-phrase-input:focus {
+	border-bottom-color: red;
+}
+
+.plate-designer[data-selected-design="pure-michigan"] .plate-phrase-input {
+	color: #305aac;
+	text-shadow: 1px 1px 1px black;
+	-webkit-text-stroke: 2px white;
+}
+
+.plate-designer[data-selected-design="pure-michigan"] .plate-phrase-input:focus {
+	border-bottom-color:  #305aac;
+}
+
+.plate-designer[data-selected-design="spectacular-peninsulas"] .plate-phrase-input,
+.plate-designer[data-selected-design="mackinac-bridge"] .plate-phrase-input {
+	color: black;
+	text-shadow: 1px 1px 1px black;
+	-webkit-text-stroke: 2px white;
+}
+
+.plate-designer[data-selected-design="spectacular-peninsulas"] .plate-phrase-input:focus,
+.plate-designer[data-selected-design="mackinac-bridge"] .plate-phrase-input:focus {
+	border-bottom-color: black;
+}

@@ -1,12 +1,8 @@
 import React from 'react';
-import selectDesignAction from '../actions/selectDesignAction';
 import { connect } from 'react-redux';
 
 export default connect(
-	state => ({
-		availableDesigns: state.getIn(['designs', 'list']),
-		selectedDesign: state.getIn(['designs', 'list', 'selected'])
-	})
+	state => ({ availableDesigns: state.getIn(['designs', 'list']) })
 )(class PlateDesignSelector extends React.Component {
 	_mapDesignsToOptions(designs) {
 		return designs
@@ -20,7 +16,7 @@ export default connect(
 	_onSelectDesign(event) {
 		let { value } = event.target;
 		value = value === 'Choose Design...' ? null : value;
-		this.props.dispatch(selectDesignAction(value))
+		this.props.selectDesign(value);
 	}
 
 	render() {

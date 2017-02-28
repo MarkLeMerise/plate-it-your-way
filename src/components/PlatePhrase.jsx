@@ -1,15 +1,8 @@
-import '../styles/number-input.css';
+import '../styles/plate-phrase.css';
 import React from 'react';
-import changePlateNumberAction from '../actions/changePlateNumberAction';
 import findFormatCollision from '../services/findFormatCollision';
-import { connect } from 'react-redux';
 
-export default connect(
-	state => ({
-		hasSelectedCause: !!state.get('selectedCause'),
-		plateNumber: state.get('plateNumber')
-	})
-)(class PlateNumberInput extends React.Component {
+export default class PlatePhrase extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -31,11 +24,11 @@ export default connect(
 		const value = event.target.value.toUpperCase();
 		const newState = {
 			formatCollision: findFormatCollision(value),
-			hasSymbol: this._hasSymbols(value)
+			hasSymbols: this._hasSymbols(value)
 		};
 
 		if (!newState.hasSymbols) {
-			this.props.dispatch(changePlateNumberAction(value));
+			this.props.changePlatePhrase(value);
 		}
 
 		this.setState(newState);
@@ -43,21 +36,24 @@ export default connect(
 
 	render() {
 		const classNames = [
-				'plate-number-input',
+				'plate-phrase',
 				!!this.state.formatCollision && 'has-format-collision',
+				this.props.hasCause && 'has-cause',
 				this.props.className
 			]
 			.filter(c => c)
 			.join(' ');
-		const maxLength = this.props.hasSelectedCause ? 6 : 7;
+		const maxLength = this.props.hasCause ? 6 : 7;
 		const props = {
-			className: 'number-input',
+			className: 'plate-phrase-input',
+			disabled: !this.props.hasDesign,
 			maxLength,
 			onChange: this._onNumberChanged.bind(this),
 			onKeyPress: this._onNumberEntered.bind(this),
 			pattern: `^[A-Za-z0-9\s]{0,${ maxLength }}$`,
+			placeholder: maxLength === 7 ? 'YOURMSG' : 'LETSGO',
 			type: 'text',
-			value: this.props.plateNumber,
+			value: this.props.phrase,
 		};
 
 		return (
@@ -74,4 +70,4 @@ export default connect(
 			</div>
 		);
 	}
-});
+};

@@ -1,29 +1,41 @@
+import 'animate.css';
 import '../styles/app.css';
+import '../styles/plate-designer.css';
 import PlateCauseLogo from './PlateCauseLogo';
 import PlateCauseSelector from './PlateCauseSelector';
 import PlateDesignSelector from './PlateDesignSelector';
+import PlateValidationMessage from './PlateValidationMessage';
 import PlateFooter from './PlateFooter';
 import PlateHeader from './PlateHeader';
-import PlateNumberInput from './PlateNumberInput';
+import PlatePhrase from './PlatePhrase';
 import React from 'react';
+import * as appActions from '../actions';
+import kebabCase from 'lodash/kebabCase';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { kebabCase } from 'lodash';
 
 export default connect(
 	state => ({
 		selectedCause: state.getIn(['causes', 'selected']),
-		selectedDesign: state.getIn(['designs', 'selected'])
+		selectedDesign: state.getIn(['designs', 'selected']),
+		phrase: state.get('platePhrase'),
+		validationMessage: 'hey'
 	})
 )(class App extends React.Component {
 	render() {
-		const { selectedCause, selectedDesign } = this.props;
+		const { phrase, selectedCause, selectedDesign } = this.props;
+		const currentDesign = selectedDesign && kebabCase(selectedDesign.code);
+		const actions = bindActionCreators(appActions, this.props.dispatch);
 
 		return (
 			<div className="app">
-				<div className="app-container" data-selected-design={ _.kebabCase(selectedDesign) }>
-					<PlateDesignSelector selectedDesign={ selectedDesign } />
-					<PlateCauseSelector selectedDesign={ selectedDesign } />
-					<div className="plate-designer">
+				<PlateDesignSelector {...actions} selectedDesign={ selectedDesign } />
+				<PlateCauseSelector {...actions} selectedDesign={ selectedDesign } />
+
+				<PlateValidationMessage message={ this.props.validationMessage } />
+
+				<div className="plate-designer" data-selected-design={ currentDesign }>
+					<div className="plate-designer-inner">
 						{ selectedDesign &&
 							<PlateHeader selectedDesign={ selectedDesign } />
 						}
@@ -32,7 +44,7 @@ export default connect(
 							{ selectedCause &&
 								<PlateCauseLogo logoStyles={ selectedCause.styles } />
 							}
-							<PlateNumberInput className="plate-designer-number" />
+							<PlatePhrase {...actions} phrase={ phrase } hasCause={ !!selectedCause } hasDesign={ !!selectedDesign } />
 						</div>
 
 						<PlateFooter className="plate-designer-footer" {...this.props} />
