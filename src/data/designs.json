@@ -10,13 +10,15 @@
 		"code": "PURE_MICHIGAN",
 		"description": "Pure Michigan",
 		"styles": {
-			"backgroundColor": "white",
-			"footerImage": "pure-michigan-wave.jpg",
+			"footerText": "michigan.org",
 			"headerImage": "pure-michigan-logo.png"
 		}
 	},
 	{
 		"code": "SPECTACULAR_PENINSULAS",
-		"description": "Spectacular Peninsulas"
+		"description": "Spectacular Peninsulas",
+		"styles": {
+			"footerText": "Spectacular Peninsulas"
+		}
 	}
 ]

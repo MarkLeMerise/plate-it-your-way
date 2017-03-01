@@ -9,8 +9,11 @@ export default connect(
 )(class PlateCauseSelector extends React.Component {
 	_mapCausesToOptions(causes) {
 		return causes.get('list')
-			.unshift({ name: 'Choose cause...' })
-			.map((c, i) => (<option key={ i } value={ c.name }>{ c.name }</option>));
+			.unshift({
+				code: 'Choose cause...',
+				description: 'Choose cause...'
+			})
+			.map(c => (<option key={ c.code } value={ c.code }>{ c.description }</option>));
 	}
 
 	_onSelectCause(event) {
@@ -24,7 +27,7 @@ export default connect(
 
 		return (
 			<div className="cause-selector">
-				<select value={ selectedCause && selectedCause.name } onChange={ this._onSelectCause.bind(this) }>
+				<select value={ selectedCause && selectedCause.code } onChange={ this._onSelectCause.bind(this) }>
 					{ this._mapCausesToOptions(this.props.causes) }
 				</select>
 			</div>

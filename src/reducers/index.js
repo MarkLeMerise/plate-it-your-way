@@ -4,8 +4,7 @@ import availableDesigns from '../data/designs.json';
 import causes from './causes';
 import constants from '../constants';
 import designs from './designs';
-import platePhrase from './platePhrase';
-import validationIsShown from './validationIsShown';
+import plate from './plate';
 import { combineReducers } from 'redux-immutable';
 import { createStore } from 'redux';
 
@@ -18,15 +17,16 @@ const initialState = Immutable.fromJS({
 		list: availableDesigns.map(d => new PlateDesign(d)),
 		selected: null
 	},
-	platePhrase: '',
-	validationIsShown: false
+	plate: {
+		error: null,
+		phrase: ''
+	}
 });
 
 const rootReducer = combineReducers({
 	causes,
 	designs,
-	platePhrase,
-	validationIsShown
+	plate
 });
 
 const store = createStore(rootReducer, initialState);

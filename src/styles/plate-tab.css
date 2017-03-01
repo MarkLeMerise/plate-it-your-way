@@ -1,37 +1,37 @@
-.plate-designer-tab {
+.plate-tab {
 	position: relative;
 }
 
-.plate-designer-tab-spot {
+.plate-tab-spot {
 	border-radius: 5px;
 	box-shadow: 1px 0px 1px #3e3e3e inset;
 	left: 4px;
-	padding: 0.3em;
+	padding: 0.3em 0.5em;
 	position: absolute;
 	top: 3px;
 	z-index: 1;
 }
 
-.plate-designer-tab-spot * {
+.plate-tab-spot * {
 	visibility: hidden;
 }
 
-.plate-designer-tab-sticker {
+.plate-tab-sticker {
 	background-color: mediumseagreen;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	border-radius: 5px;
 	transform: rotate(6deg);
 	font-family: sans-serif;
 }
 
-.plate-designer-tab-month {
+.plate-tab-month {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
 }
 
-.plate-designer-tab-year {
-	font-size: 0.8rem;
-	text-align: left;
+.plate-tab-year,
+.plate-tab-state {
+	font-size: 0.6rem;
 }

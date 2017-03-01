@@ -13,7 +13,7 @@ export default (state, action) => {
 
 	if (action.type === constants.SELECT_CAUSE) {
 		const { cause } = action.payload;
-		return state.set('selected', state.get('list').find(c => c.name === cause, this, null));
+		return state.set('selected', state.get('list').find(c => c.code === cause, this, null));
 	}
 
 	return state;

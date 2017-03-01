@@ -22,22 +22,22 @@ export default class PlatePhrase extends React.Component {
 
 	_onNumberChanged(event) {
 		const value = event.target.value.toUpperCase();
-		const newState = {
+		const validation = {
 			formatCollision: findFormatCollision(value),
 			hasSymbols: this._hasSymbols(value)
 		};
 
-		if (!newState.hasSymbols) {
+		if (!validation.hasSymbols) {
 			this.props.changePlatePhrase(value);
 		}
 
-		this.setState(newState);
+		this.props.setValidationErrors(validation);
 	}
 
 	render() {
 		const classNames = [
 				'plate-phrase',
-				!!this.state.formatCollision && 'has-format-collision',
+				this.props.hasError && 'has-format-collision',
 				this.props.hasCause && 'has-cause',
 				this.props.className
 			]

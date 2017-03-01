@@ -26,3 +26,19 @@ export function selectDesign(design) {
 		payload: { design }
 	};
 };
+
+export function setValidationErrors(validation) {
+	let error = null;
+
+	if (validation.formatCollision) {
+		error = 'Sorry, another plate already uses this format.';
+	}
+	else if (validation.hasSymbols) {
+		error = 'Sorry, we can only print plates with letters and numbers.';
+	}
+
+	return {
+		type: constants.SET_VALIDATION_ERRORS,
+		payload: { error }
+	};
+};

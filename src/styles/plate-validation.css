@@ -1,0 +1,32 @@
+.plate-validation {
+	display: flex;
+	justify-content: center;
+	margin: 1em 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.plate-validation.animated {
+	animation-duration: 3s;
+}
+
+.plate-validation.is-hidden {
+	opacity: 0;
+}
+
+.plate-validation-message {
+	border-radius: 3px;
+	border: darkgreen;
+	background-color: green;
+	color: white;
+	padding: 0.5em;
+	font-family: Helvetica;
+	transition: all 0.15s ease-in;
+}
+
+.plate-validation.has-error-message .plate-validation-message {
+	border: red;
+	background-color: #d45252;
+}

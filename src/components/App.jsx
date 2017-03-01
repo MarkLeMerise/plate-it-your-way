@@ -4,7 +4,7 @@ import '../styles/plate-designer.css';
 import PlateCauseLogo from './PlateCauseLogo';
 import PlateCauseSelector from './PlateCauseSelector';
 import PlateDesignSelector from './PlateDesignSelector';
-import PlateValidationMessage from './PlateValidationMessage';
+import PlateValidation from './PlateValidation';
 import PlateFooter from './PlateFooter';
 import PlateHeader from './PlateHeader';
 import PlatePhrase from './PlatePhrase';
@@ -16,14 +16,14 @@ import { connect } from 'react-redux';
 
 export default connect(
 	state => ({
+		error: state.getIn(['plate', 'error']),
+		platePhrase: state.getIn(['plate', 'phrase']),
 		selectedCause: state.getIn(['causes', 'selected']),
 		selectedDesign: state.getIn(['designs', 'selected']),
-		phrase: state.get('platePhrase'),
-		validationMessage: 'hey'
 	})
 )(class App extends React.Component {
 	render() {
-		const { phrase, selectedCause, selectedDesign } = this.props;
+		const { error, phrase, selectedCause, selectedDesign } = this.props;
 		const currentDesign = selectedDesign && kebabCase(selectedDesign.code);
 		const actions = bindActionCreators(appActions, this.props.dispatch);
 
@@ -32,10 +32,10 @@ export default connect(
 				<PlateDesignSelector {...actions} selectedDesign={ selectedDesign } />
 				<PlateCauseSelector {...actions} selectedDesign={ selectedDesign } />
 
-				<PlateValidationMessage message={ this.props.validationMessage } />
-
 				<div className="plate-designer" data-selected-design={ currentDesign }>
 					<div className="plate-designer-inner">
+						<PlateValidation message={ error } />
+
 						{ selectedDesign &&
 							<PlateHeader selectedDesign={ selectedDesign } />
 						}
@@ -44,7 +44,7 @@ export default connect(
 							{ selectedCause &&
 								<PlateCauseLogo logoStyles={ selectedCause.styles } />
 							}
-							<PlatePhrase {...actions} phrase={ phrase } hasCause={ !!selectedCause } hasDesign={ !!selectedDesign } />
+							<PlatePhrase {...actions} phrase={ this.props.platePhrase } hasError={ !!error } hasCause={ !!selectedCause } hasDesign={ !!selectedDesign } />
 						</div>
 
 						<PlateFooter className="plate-designer-footer" {...this.props} />
