@@ -4,8 +4,8 @@ import { Transition } from 'react-overlays';
 
 export default class PlateValidation extends React.Component {
 	render() {
-		let { message } = this.props;
-		const hasError = !!message;
+		const { hasError, phrase } = this.props;
+		const message = hasError ? 'Sorry, this plate isn\'t available.' : 'Nevermind! 😀';
 		const classNames = [
 			'animated',
 			'plate-validation',
@@ -13,7 +13,6 @@ export default class PlateValidation extends React.Component {
 		]
 			.filter(c => c)
 			.join(' ');
-		message = message || 'Nevermind! 😀';
 
 		return (
 			<Transition in={ hasError } timeout={ 2500 } enteredClassName="fadeIn" exitingClassName="fadeOut" exitedClassName="fadeOut">

@@ -1,10 +1,16 @@
 {
+  "config": {
+    "presets": [
+      "neutrino-preset-react",
+      "neutrino-custom.js"
+    ]
+  },
   "license": "MIT",
   "name": "plate-it-your-way",
   "version": "0.0.1",
   "scripts": {
-    "start": "neutrino start --presets neutrino-preset-react",
-    "build": "neutrino build --presets neutrino-preset-react"
+    "start": "neutrino start",
+    "build": "neutrino build"
   },
   "devDependencies": {
     "eslint": "^3.16.1",
@@ -14,13 +20,17 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "babel-polyfill": "^6.23.0",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
+    "random-int": "^1.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-hot-loader": "next",
     "react-overlays": "^0.6.11",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
-    "redux-immutable": "^3.1.0"
+    "redux-immutable": "^3.1.0",
+    "redux-saga": "^0.14.3"
   }
 }

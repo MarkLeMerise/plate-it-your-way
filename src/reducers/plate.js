@@ -1,12 +1,21 @@
 import constants from '../constants';
+import validations from '../validations';
 
 export default (state, action) => {
-	if (action.type === constants.CHANGE_PLATE_PHRASE) {
+	if (action.type === constants.PHRASE_CHANGED) {
 		return state.set('phrase', action.payload.platePhrase);
 	}
 
-	if (action.type === constants.SET_VALIDATION_ERRORS) {
-		return state.set('error', action.payload.error);
+	if (action.type === constants.SELECT_CAUSE) {
+		return state.merge({
+			hasError: false,
+			phrase: null
+		});
+	}
+
+	if (action.type === constants.PHRASE_VALIDATION_CHANGED) {
+		const { isOkay } = action.payload;
+		return state.set('hasError', !isOkay);
 	}
 
 	return state;

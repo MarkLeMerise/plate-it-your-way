@@ -1,0 +1,14 @@
+.plate-cause {
+	margin-right: 2rem;
+}
+
+.plate-cause-text {
+	color: #305aac;
+	font-family: sans-serif;
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-top: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	transform: rotate(-25deg);
+}

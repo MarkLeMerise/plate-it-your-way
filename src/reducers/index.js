@@ -5,8 +5,10 @@ import causes from './causes';
 import constants from '../constants';
 import designs from './designs';
 import plate from './plate';
+import { applyMiddleware, createStore } from 'redux';
 import { combineReducers } from 'redux-immutable';
-import { createStore } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import rootSaga from '../sagas';
 
 const initialState = Immutable.fromJS({
 	causes: {
@@ -18,7 +20,7 @@ const initialState = Immutable.fromJS({
 		selected: null
 	},
 	plate: {
-		error: null,
+		hasError: false,
 		phrase: ''
 	}
 });
@@ -29,8 +31,10 @@ const rootReducer = combineReducers({
 	plate
 });
 
-const store = createStore(rootReducer, initialState);
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(rootReducer, initialState, applyMiddleware(sagaMiddleware));
 
+sagaMiddleware.run(rootSaga)
 store.subscribe(() => console.log(store.getState().toJSON()));
 
 export default store;

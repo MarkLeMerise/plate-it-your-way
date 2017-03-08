@@ -19,8 +19,8 @@ export default (input = '') => {
 	const testGroup = testsByLength.get(input.length);
 
 	if (!testGroup) {
-		return null;
+		return true;
 	}
 
-	return testGroup.find(t => t.test(input), this, null);
+	return !testGroup.find(t => t.test(input), this, null);
 };

@@ -1,15 +1,11 @@
 import constants from '../constants';
+import plateDatabase from '../data/plateDatabase.json';
+import randomInt from 'random-int';
 
 export function changePlatePhrase(platePhrase) {
 	return {
-		type: constants.CHANGE_PLATE_PHRASE,
+		type: constants.PHRASE_CHANGED,
 		payload: { platePhrase }
-	};
-};
-
-export function toggleValidationMessage() {
-	return {
-		type: constants.TOGGLE_VALIDATION_MESSAGE
 	};
 };
 
@@ -27,18 +23,16 @@ export function selectDesign(design) {
 	};
 };
 
-export function setValidationErrors(validation) {
-	let error = null;
-
-	if (validation.formatCollision) {
-		error = 'Sorry, another plate already uses this format.';
-	}
-	else if (validation.hasSymbols) {
-		error = 'Sorry, we can only print plates with letters and numbers.';
-	}
-
+export function validationChanged(validationType, isOkay) {
 	return {
-		type: constants.SET_VALIDATION_ERRORS,
-		payload: { error }
+		type: constants.PHRASE_VALIDATION_CHANGED,
+		payload: { isOkay, validationType }
 	};
 };
+
+export function togglePhraseCollisionLoading(isLoading) {
+	return {
+		type: constants.PHRASE_COLLISION_LOADING,
+		payload: { isLoading }
+	}
+}

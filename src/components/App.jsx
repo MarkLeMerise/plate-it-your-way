@@ -1,7 +1,7 @@
 import 'animate.css';
 import '../styles/app.css';
 import '../styles/plate-designer.css';
-import PlateCauseLogo from './PlateCauseLogo';
+import PlateCause from './PlateCause';
 import PlateCauseSelector from './PlateCauseSelector';
 import PlateDesignSelector from './PlateDesignSelector';
 import PlateValidation from './PlateValidation';
@@ -16,14 +16,13 @@ import { connect } from 'react-redux';
 
 export default connect(
 	state => ({
-		error: state.getIn(['plate', 'error']),
-		platePhrase: state.getIn(['plate', 'phrase']),
+		plate: state.getIn(['plate']).toJSON(),
 		selectedCause: state.getIn(['causes', 'selected']),
 		selectedDesign: state.getIn(['designs', 'selected']),
 	})
 )(class App extends React.Component {
 	render() {
-		const { error, phrase, selectedCause, selectedDesign } = this.props;
+		const { plate, selectedCause, selectedDesign } = this.props;
 		const currentDesign = selectedDesign && kebabCase(selectedDesign.code);
 		const actions = bindActionCreators(appActions, this.props.dispatch);
 
@@ -34,7 +33,7 @@ export default connect(
 
 				<div className="plate-designer" data-selected-design={ currentDesign }>
 					<div className="plate-designer-inner">
-						<PlateValidation message={ error } />
+						<PlateValidation hasError={ plate.hasError } phrase={ plate.phrase } />
 
 						{ selectedDesign &&
 							<PlateHeader selectedDesign={ selectedDesign } />
@@ -42,9 +41,9 @@ export default connect(
 
 						<div className="plate-designer-content">
 							{ selectedCause &&
-								<PlateCauseLogo logoStyles={ selectedCause.styles } />
+								<PlateCause logoStyles={ selectedCause.styles } />
 							}
-							<PlatePhrase {...actions} phrase={ this.props.platePhrase } hasError={ !!error } hasCause={ !!selectedCause } hasDesign={ !!selectedDesign } />
+							<PlatePhrase {...actions} phrase={ this.props.plate.phrase } hasError={ plate.hasError } hasCause={ !!selectedCause } hasDesign={ !!selectedDesign } />
 						</div>
 
 						<PlateFooter className="plate-designer-footer" {...this.props} />
