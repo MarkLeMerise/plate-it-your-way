@@ -1,5 +1,7 @@
+import 'react-select/dist/react-select.css';
 import React from 'react';
 import { connect } from 'react-redux';
+import Select from 'react-select';
 
 export default connect(
 	state => ({
@@ -8,28 +10,29 @@ export default connect(
 	})
 )(class PlateCauseSelector extends React.Component {
 	_mapCausesToOptions(causes) {
+		debugger;
+
 		return causes.get('list')
-			.unshift({
-				code: 'Choose cause...',
-				description: 'Choose cause...'
-			})
-			.map(c => (<option key={ c.code } value={ c.code }>{ c.description }</option>));
+			.map(c => ({
+				label: c.description,
+				value: c.code
+			}))
+			.toJSON();
 	}
 
-	_onSelectCause(event) {
-		let { value } = event.target;
-		value = value === 'Choose cause...' ? null : value;
-		this.props.selectCause(value);
+	_onSelectCause(option) {
+		this.props.selectCause(option ? option.value : null);
 	}
 
 	render() {
 		const { selectedCause } = this.props;
+		const options = this._mapCausesToOptions(this.props.causes);
 
 		return (
-			<div className="cause-selector">
-				<select value={ selectedCause && selectedCause.code } onChange={ this._onSelectCause.bind(this) }>
-					{ this._mapCausesToOptions(this.props.causes) }
-				</select>
+			<div className="cause-selector plate-style-selector">
+				{ options.length > 0 &&
+					<Select onChange={ this._onSelectCause.bind(this) } placeholder="Choose cause..." options={ options } value={ selectedCause && selectedCause.code } />
+				}
 			</div>
 		);
 	}

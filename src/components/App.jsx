@@ -28,8 +28,10 @@ export default connect(
 
 		return (
 			<div className="app">
-				<PlateDesignSelector {...actions} selectedDesign={ selectedDesign } />
-				<PlateCauseSelector {...actions} selectedDesign={ selectedDesign } />
+				<div className="plate-style-selection">
+					<PlateDesignSelector {...actions} selectedDesign={ selectedDesign } />
+					<PlateCauseSelector {...actions} selectedDesign={ selectedDesign } />
+				</div>
 
 				<div className="plate-designer" data-selected-design={ currentDesign }>
 					<div className="plate-designer-inner">

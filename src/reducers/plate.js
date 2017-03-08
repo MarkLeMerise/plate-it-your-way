@@ -9,7 +9,7 @@ export default (state, action) => {
 	if (action.type === constants.SELECT_CAUSE) {
 		return state.merge({
 			hasError: false,
-			phrase: null
+			phrase: ''
 		});
 	}
 

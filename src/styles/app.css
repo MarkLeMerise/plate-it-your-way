@@ -6,6 +6,6 @@
 	font-style: normal;
 }
 
-.app {
-	margin: 1em;
+.app .Select-menu-outer {
+	z-index: 2;
 }
