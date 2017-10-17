@@ -10,8 +10,6 @@ export default connect(
 	})
 )(class PlateCauseSelector extends React.Component {
 	_mapCausesToOptions(causes) {
-		debugger;
-
 		return causes.get('list')
 			.map(c => ({
 				label: c.description,

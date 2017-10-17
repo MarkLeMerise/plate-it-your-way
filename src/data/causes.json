@@ -9,6 +9,10 @@
 		"code": "Afghanistan Conflict Veteran",
 		"description": "Afghanistan Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Afghanistan"
+		},
 		"type": "veteran"
 	},
 	{
@@ -39,6 +43,10 @@
 		"code": "Cuban Missile Crisis",
 		"description": "Cuban Missile Crisis",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Cuban Missile Crisis"
+		},
 		"type": "veteran"
 	},
 	{
@@ -51,6 +59,10 @@
 		"code": "Dominican Republic Veteran",
 		"description": "Dominican Republic Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Dominican Republic"
+		},
 		"type": "veteran"
 	},
 	{
@@ -69,6 +81,10 @@
 		"code": "Grenada Conflict Veteran",
 		"description": "Grenada Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Grenada"
+		},
 		"type": "veteran"
 	},
 	{
@@ -81,24 +97,40 @@
 		"code": "Iraq Conflict Veteran",
 		"description": "Iraq Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Iraq"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Korean War Veteran",
 		"description": "Korean War Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Korea"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Laos Conflict Veteran",
 		"description": "Laos Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Laos"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Lebanon Conflict Veteran",
 		"description": "Lebanon Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Lebanon"
+		},
 		"type": "veteran"
 	},
 	{
@@ -133,24 +165,40 @@
 		"code": "Panama Veteran",
 		"description": "Panama Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Panama"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Pearl Harbor Survivor",
 		"description": "Pearl Harbor Survivor",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Pearl Harbor Survivor",
+			"logoText": ""
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Persian Gulf (Desert Storm) Veteran",
 		"description": "Persian Gulf (Desert Storm) Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Persian Gulf"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "Somalia Conflict Veteran",
 		"description": "Somalia Conflict Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Somalia"
+		},
 		"type": "veteran"
 	},
 	{
@@ -163,12 +211,20 @@
 		"code": "Vietnam War Veteran",
 		"description": "Vietnam War Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "Vietnam"
+		},
 		"type": "veteran"
 	},
 	{
 		"code": "World War II Veteran",
 		"description": "World War II Veteran",
 		"designCompatibility": ["PURE_MICHIGAN", "SPECTACULAR_PENINSULAS"],
+		"styles": {
+			"footerText": "Veteran",
+			"logoText": "World War II"
+		},
 		"type": "veteran"
 	},
 	{

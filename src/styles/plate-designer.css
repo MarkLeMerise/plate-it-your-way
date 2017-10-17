@@ -4,6 +4,11 @@
 	justify-content: center;
 }
 
+.plate-header .plate-tab {
+	position: absolute;
+	right: 5%;
+}
+
 .plate-footer {
 	display: flex;
 	justify-content: center;
